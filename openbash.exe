@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Search the entire filesystem for the word "huzaifa" and print the file paths where it is found
+
+echo "Searching the entire computer for the word 'huzaifa'..."
+
+find / -type f -exec grep -l "huzaifa" {} \; 2>/dev/null
